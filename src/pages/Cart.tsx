@@ -192,7 +192,7 @@ const Cart = () => {
         {!restaurant.isOpen ? "Restaurant is closed" : "Proceed to Checkout"}
       </button>
 
-       <button onClick={clearCart} className="mt-3 w-full rounded-lg bg-[#4a4747] py-3 text-sm font-semibold text-white hover:bg-gray-600 flex justify-center items-center gap-3">
+       <button onClick={clearCart} disabled={clearingCart} className="mt-3 w-full rounded-lg bg-[#4a4747] py-3 text-sm font-semibold text-white hover:bg-gray-600 flex justify-center items-center gap-3">
         CLear Cart <TbTrack size={16}/>
       </button>
     </div>
